@@ -8,9 +8,8 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/", methods=["GET"])
 @cross_origin()
-def home():
-    JSONToReturn = '{ "Ander":"Guapo"}'
-    return json.loads(JSONToReturn)
+def hello():
+    return "Hello World"
 
 @app.route("/ander", methods=["GET"])
 @cross_origin()
